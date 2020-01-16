@@ -1,0 +1,5 @@
+---
+- name: installing jenkins
+  yum:
+    name: jenkins
+    state: latest

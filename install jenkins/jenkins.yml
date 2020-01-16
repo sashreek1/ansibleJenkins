@@ -1,0 +1,9 @@
+---
+- hosts: localhost 
+  become: yes
+  name: jenkins-installer
+  roles:
+    - role: create_dir
+    - role: download_source
+    - role: get_rpm
+    - role: install_jenkins
